@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main_container{
+    height:100vh;
+    width:100vw;
+    display: grid;
+    place-items: center;
+    /* background-image:url("https://media1.giphy.com/media/l1BgQOc1Jj7L86BA4/giphy.gif?cid=6c09b952ibh23gnhruwzwmdcytqhz6ql4ofgujpgsru1iv10&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g"); */
+    /* background-image: url("https://i.pinimg.com/originals/c2/0e/c1/c20ec1899a86b748666e6f0d70ef5311.gif"); */
+    /* background-image: url("./Assets/background.gif"); */
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+
+}
+
+#card_container{
+    height: 420px;
+    width: 380px;
+    background-color: rgba(255,255,255,0.2);
+    /* backdrop-filter: blur(1px); */
+    border:2px solid #efefef;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-around; */
+   
+}
+
+#card_container:hover{
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+    scale: 0.95;
+}
+
+#firstSection{
+    flex-basis: 15%;
+    width:100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    /* border: 2px solid black; */
+}
+
+#location{
+    background-color:aliceblue;
+    height: 39px;
+    width: 220px;
+    border-radius: 28px;
+    padding-left: 10px;
+    outline: none;
+    /* border:none; */
+    border:2px solid black;
+    font-family:"Kalam";
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: rgba(65, 105, 225,0.6);
+    border: none;
+    text-transform: uppercase;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-weight: 700;
+    text-shadow: 10px 10px 20px white;
+    /* transition: background 400ms; */
+}
+
+#secondSection{
+    flex-basis: 55%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#secondSection img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: none;
+    /* border: 2px solid black; */
+}
+#thirdSection{
+    flex-basis: 30%;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+}
+
+#temp,#humid{
+    /* border: 2px solid aliceblue; */
+    border-radius: 50px;
+    /* background-color: aliceblue; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color:black;
+}
+
+.heading{
+    font-family: "Kalam", cursive;
+    /* color: white; */
+    font-size: 22px;
+}
+
+.para{
+    font-family: "Mate SC", serif;
+    font-size: 27px;
+    /* color: white; */
+    font-style: italic;
+}
+
+
+#weather_condition{
+    /* color: white; */
+    /* text-transform: uppercase; */
+    font-size: 20px;
+    font-family:"Mate SC";
+    font-style: italic; 
+}
+
+/* @media (min-width:500px) and (max-width:700px){
+    #card_container{
+        background-color: mediumslateblue;
+    }
+   
+} */
+
+
+
